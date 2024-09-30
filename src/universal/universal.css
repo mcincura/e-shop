@@ -1,0 +1,16 @@
+.main-content{
+    background: rgb(255,241,221);
+    background: linear-gradient(0deg, rgba(255,241,221,1) 0%, rgba(255,255,255,1) 80%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2vw;
+}
+
+.main-content p{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
