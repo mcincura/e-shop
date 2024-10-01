@@ -35,7 +35,7 @@ const Navbar = () => {
                     <Link to="/">
                         <img src='./images/logo.png' alt='fake logo' />
                     </Link>
-                    <Link to="/test">
+                    <Link to="/">
                         <p>ALLADIN</p>
                     </Link>
                 </div>
@@ -49,11 +49,10 @@ const Navbar = () => {
                     <div className='cart-container'>
                         <div className='main-cart-icon'>
                             <div className='cart-icon'>
-                                <FaShoppingCart size={iconSize} />
+                                <Link to="/cart"><FaShoppingCart size={iconSize} /></Link>
                             </div>
                             {cartItems > 0 && <span className='cart-count'>{cartItems}</span>}
                         </div>
-                        <Link to="/cart" className='cart-text'>CART</Link>
                     </div>
                 </div>
             </nav>
