@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import './Navbar.css'
@@ -6,6 +6,27 @@ import './Navbar.css'
 const Navbar = () => {
 
     const [cartItems, setCartItems] = useState(420);
+    const [iconSize, setIconSize] = useState(getViewportWidth());
+
+    // Function to get current viewport width in vw
+    function getViewportWidth() {
+        return window.innerWidth * 0.025; // 3vw
+    }
+
+    useEffect(() => {
+        // Function to handle resize and update the icon size
+        const handleResize = () => {
+            setIconSize(getViewportWidth());
+        };
+
+        // Add event listener for window resize
+        window.addEventListener('resize', handleResize);
+
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <div className='main-navbar-container'>
@@ -28,7 +49,7 @@ const Navbar = () => {
                     <div className='cart-container'>
                         <div className='main-cart-icon'>
                             <div className='cart-icon'>
-                                <FaShoppingCart size={40} />
+                                <FaShoppingCart size={iconSize} />
                             </div>
                             {cartItems > 0 && <span className='cart-count'>{cartItems}</span>}
                         </div>
