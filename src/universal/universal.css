@@ -1,9 +1,4 @@
 .main-content{
-    background: rgb(255,241,221);
-    background: linear-gradient(0deg, rgba(255,241,221,1) 0%, rgba(255,255,255,1) 80%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #9d8077;
 }
 

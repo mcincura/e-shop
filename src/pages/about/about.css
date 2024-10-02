@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Arabic1';
+    src: url(../../../public/fonts/Arabic\ Ramadhan.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arabic2';
+    src: url(../../../public/fonts/RamadhanMubarok-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arabic3';
+    src: url(../../../public/fonts/Sketsa\ Ramadhan.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.about-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 5vw;
+    color: #fff;
+}
+
+.arabic-font{
+    font-family: 'Arabic2';
+    color: #fff;
+}
+
+.about-section1-1{
+    margin-top: 3vw;
+    background-image: url(../../../public/assets/images/about/teaCulture.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+    max-height: 39vh;
+    width: 100vw;
+}
+
+.about-section1-1-text{
+    height: 100%;
+    width: 100%;
+    background: rgb(255,241,221);
+    background: linear-gradient(270deg, 
+    rgba(255,241,221,0) 0%, 
+    rgba(0,0,0,0.7) 95%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5vw;
+}
+
+.about-section1-1-text h2{
+    max-width: 50vw;
+    color: #fff;
+}

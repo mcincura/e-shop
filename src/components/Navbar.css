@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Arabic2';
+    src: url(../../public/fonts/RamadhanMubarok-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
